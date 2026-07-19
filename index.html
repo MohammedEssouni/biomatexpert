@@ -114,8 +114,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-close{position:absolute;top:1.5rem;right:2rem;font-size:1.5rem;color:var(--text3);cursor:pointer;background:none;border:none;}
 
 /* ── HERO ── */
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:6rem 4rem 3rem;gap:5rem;background:var(--white);position:relative;}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:6rem 4rem 3rem;background:var(--white);position:relative;}
 .hero::after{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,transparent,var(--navy) 20%,var(--navy) 80%,transparent);}
+.hero-content{max-width:680px;}
 .hero-eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.7rem;}
 .hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
 h1{font-family:var(--fd);font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:700;line-height:1.12;margin-bottom:0.5rem;color:var(--navy3);}
@@ -130,8 +131,7 @@ h1 em{font-style:italic;font-weight:400;color:var(--navy2);}
 .btn-primary:hover{background:var(--navy2);}
 .btn-secondary{background:transparent;border:1.5px solid var(--navy);color:var(--navy);margin-left:0.8rem;}
 .btn-secondary:hover{background:var(--navy);color:var(--white);}
-.hero-img img{width:100%;height:auto;display:block;box-shadow:0 20px 60px rgba(26,50,84,0.15);}
-.hero-img-caption{margin-top:0.8rem;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);text-align:center;}
+
 
 /* ── SECTIONS ── */
 section{padding:5.5rem 4rem;}
@@ -237,7 +237,7 @@ footer a:hover{color:var(--white);}
 @media(max-width:900px){
   nav{padding:1rem 1.5rem;} .nav-center{display:none;} .hamburger{display:flex;}
   .hero{grid-template-columns:1fr;padding:5.5rem 1.5rem 3rem;gap:3rem;}
-  .hero-img{max-width:300px;margin:0 auto;}
+
   section{padding:3.5rem 1.5rem;}
   .expertise-grid{grid-template-columns:1fr;}
   .services-layout{grid-template-columns:1fr;border:none;gap:1rem;}
@@ -362,19 +362,16 @@ footer a:hover{color:var(--white);}
         <span class="cred-label lang-fr">Prix transfert</span>
       </div>
     </div>
-    <div>
+    <div style="display:flex;flex-wrap:wrap;gap:0.8rem;align-items:center;">
       <a href="#kontakt" class="btn btn-primary lang-de">Gutachten anfragen →</a>
       <a href="#kontakt" class="btn btn-primary lang-en">Request consultation →</a>
       <a href="#kontakt" class="btn btn-primary lang-fr">Demander une expertise →</a>
-      <a href="#expertise" class="btn btn-secondary lang-de">Fachgebiete</a>
-      <a href="#expertise" class="btn btn-secondary lang-en">Expertise areas</a>
-      <a href="#expertise" class="btn btn-secondary lang-fr">Domaines</a>
+      <a href="#expertise" class="btn btn-secondary lang-de" style="margin-left:0;">Fachgebiete</a>
+      <a href="#expertise" class="btn btn-secondary lang-en" style="margin-left:0;">Expertise areas</a>
+      <a href="#expertise" class="btn btn-secondary lang-fr" style="margin-left:0;">Domaines</a>
     </div>
   </div>
-  <div class="hero-img">
-    <img src="photo2.jpg" alt="Prof. Dr. Mohammed Es-Souni">
-    <div class="hero-img-caption">Prof. Dr. Mohammed Es-Souni · Kiel</div>
-  </div>
+
 </section>
 
 <!-- SERVICES -->
