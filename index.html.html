@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BiomatExpert | Prof. Dr. Mohammed Es-Souni – Unabhängiger Technischer Experte</title>
+<meta name="description" content="Prof. Dr. Mohammed Es-Souni – Unabhängiger technischer Experte für Materialwissenschaften, Biomaterialien, Nanomaterialien und funktionelle Polymere. Consulting für Unternehmen und Patentanwaltskanzleien.">
+<meta name="keywords" content="technischer Sachverständiger, Materialwissenschaften, Biomaterialien, Nanomaterialien, Drug Delivery, Polymere, Hydrogele, IP-Bewertung, Due Diligence, Schadensgutachten, Patentanwalt, Kiel">
+<meta name="author" content="Prof. Dr. Mohammed Es-Souni">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://biomatexpert.de">
+<meta property="og:title" content="BiomatExpert – Prof. Dr. Mohammed Es-Souni">
+<meta property="og:description" content="Unabhängiger technischer Experte für Materialwissenschaften, Biomaterialien und Nanomaterialien. 160+ Publikationen, 15 Patente, 35+ Jahre Industrieerfahrung.">
+<meta property="og:url" content="https://biomatexpert.de">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammed Es-Souni",
+  "honorificPrefix": "Prof. Dr.",
+  "jobTitle": "Unabhängiger Technischer Experte / Independent Technical Expert",
+  "url": "https://biomatexpert.de",
+  "email": "contact@biomatexpert.de",
+  "sameAs": [
+    "https://cleancoat-imst.de",
+    "https://scholar.google.com/citations?user=OJ-1LlMAAAAJ"
+  ],
+  "address": {"@type": "PostalAddress", "addressLocality": "Kiel", "addressCountry": "DE"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white:#ffffff;
+  --bg:#f4f6f9;
+  --bg2:#eaecf0;
+  --navy:#1a3254;
+  --navy2:#2a4a6b;
+  --navy3:#0f2040;
+  --gold:#b5924c;
+  --gold2:#d4b06a;
+  --bordeaux:#7b2035;
+  --text:#1c2333;
+  --text2:#4a5568;
+  --text3:#8896a5;
+  --border:rgba(26,50,84,0.12);
+  --border2:rgba(26,50,84,0.22);
+  --fd:'Playfair Display',serif;
+  --fb:'Inter',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--white);color:var(--text);font-family:var(--fb);font-size:16px;line-height:1.7;overflow-x:hidden;}
+
+/* LANGUAGE */
+.lang-en,.lang-fr{display:none;}
+body.en .lang-de,.body.en .lang-fr{display:none;}
+body.en .lang-en{display:revert;}
+body.fr .lang-de,.body.fr .lang-en{display:none;}
+body.fr .lang-fr{display:revert;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:0 1px 12px rgba(26,50,84,0.07);}
+.nav-logo{display:flex;flex-direction:column;text-decoration:none;}
+.nav-logo-main{font-family:var(--fd);font-size:1.3rem;font-weight:700;color:var(--navy);letter-spacing:0.02em;line-height:1;}
+.nav-logo-sub{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text3);margin-top:2px;}
+.nav-center{display:flex;gap:2rem;list-style:none;}
+.nav-center a{color:var(--text2);text-decoration:none;font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;font-weight:500;transition:color 0.2s;}
+.nav-center a:hover{color:var(--navy);}
+.nav-right{display:flex;align-items:center;gap:1.2rem;}
+.lang-switcher{display:flex;gap:0;border:1px solid var(--border2);overflow:hidden;}
+.lang-btn{background:none;border:none;padding:0.35rem 0.65rem;font-size:0.72rem;font-weight:600;letter-spacing:0.08em;color:var(--text3);cursor:pointer;transition:all 0.18s;font-family:var(--fb);}
+.lang-btn:hover{background:var(--bg);color:var(--navy);}
+.lang-btn.active{background:var(--navy);color:var(--white);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);}
+.nav-mobile{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,0.98);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2rem;}
+.nav-mobile a{color:var(--navy);text-decoration:none;font-family:var(--fd);font-size:1.8rem;font-weight:400;}
+.nav-mobile .lang-switcher{margin-top:1rem;}
+.nav-mobile.open{display:flex;}
+.nav-close{position:absolute;top:1.5rem;right:2rem;font-size:1.5rem;color:var(--text3);cursor:pointer;background:none;border:none;}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:6rem 4rem 3rem;gap:5rem;background:var(--white);position:relative;}
+.hero::after{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,transparent,var(--navy) 20%,var(--navy) 80%,transparent);}
+.hero-content{position:relative;}
+.hero-eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.7rem;}
+.hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
+h1{font-family:var(--fd);font-size:clamp(2.4rem,4vw,3.8rem);font-weight:700;line-height:1.08;margin-bottom:0.5rem;color:var(--navy3);}
+h1 em{font-style:italic;font-weight:400;color:var(--navy2);}
+.hero-rule{width:60px;height:3px;background:var(--bordeaux);margin:1.4rem 0;}
+.hero-desc{color:var(--text2);font-size:0.97rem;max-width:440px;margin-bottom:2rem;line-height:1.85;}
+.hero-credentials{display:flex;gap:2.5rem;margin-bottom:2.2rem;padding:1.2rem 1.5rem;background:var(--bg);border-left:3px solid var(--navy);}
+.cred-num{font-family:var(--fd);font-size:1.9rem;font-weight:700;color:var(--navy);display:block;line-height:1;}
+.cred-label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);margin-top:0.2rem;display:block;}
+.btn{display:inline-flex;align-items:center;gap:0.6rem;padding:0.82rem 1.8rem;font-family:var(--fb);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;text-decoration:none;transition:all 0.22s;cursor:pointer;border:none;}
+.btn-primary{background:var(--navy);color:var(--white);}
+.btn-primary:hover{background:var(--navy2);}
+.btn-secondary{background:transparent;border:1.5px solid var(--navy);color:var(--navy);margin-left:0.8rem;}
+.btn-secondary:hover{background:var(--navy);color:var(--white);}
+.hero-img{position:relative;}
+.hero-img img{width:100%;height:auto;display:block;box-shadow:0 20px 60px rgba(26,50,84,0.15);}
+.hero-img::before{content:'';position:absolute;top:-12px;left:-12px;right:12px;bottom:12px;border:2px solid var(--navy);opacity:0.15;z-index:-1;}
+.hero-img-caption{margin-top:0.8rem;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);text-align:center;}
+
+/* SECTIONS */
+section{padding:5.5rem 4rem;}
+.section-alt{background:var(--bg);}
+.sec-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:0.8rem;display:flex;align-items:center;gap:0.6rem;}
+.sec-label::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+h2{font-family:var(--fd);font-size:clamp(1.8rem,2.8vw,2.6rem);font-weight:700;line-height:1.1;margin-bottom:0.6rem;color:var(--navy3);}
+h2 em{font-style:italic;font-weight:400;}
+.sec-rule{width:44px;height:3px;background:var(--bordeaux);margin:1rem 0 2.5rem;}
+.sec-intro{color:var(--text2);max-width:600px;font-size:0.95rem;margin-bottom:3rem;line-height:1.85;}
+
+/* EXPERTISE GRID */
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.exp-card{background:var(--white);padding:2rem 1.8rem;border:1px solid var(--border);border-top:3px solid var(--navy);transition:all 0.22s;position:relative;}
+.exp-card:hover{box-shadow:0 8px 32px rgba(26,50,84,0.1);transform:translateY(-2px);}
+.exp-icon{font-size:1.4rem;margin-bottom:1rem;color:var(--navy);}
+h3{font-family:var(--fd);font-size:1.15rem;font-weight:600;color:var(--navy3);margin-bottom:0.55rem;line-height:1.3;}
+.exp-desc{color:var(--text2);font-size:0.86rem;line-height:1.72;}
+.exp-tags{display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:1rem;}
+.exp-tag{font-size:0.63rem;letter-spacing:0.07em;text-transform:uppercase;padding:0.2rem 0.5rem;background:var(--bg);color:var(--text3);border:1px solid var(--border);}
+
+/* SERVICES */
+.services-layout{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);}
+.svc{padding:2.5rem 2.2rem;border-right:1px solid var(--border);position:relative;}
+.svc:last-child{border-right:none;}
+.svc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--bordeaux);}
+.svc-num{font-family:var(--fd);font-size:3rem;font-weight:700;color:var(--bg2);line-height:1;margin-bottom:1rem;}
+.svc h3{margin-bottom:0.7rem;}
+.svc-desc{color:var(--text2);font-size:0.88rem;line-height:1.75;}
+.svc-list{list-style:none;margin-top:1rem;}
+.svc-list li{font-size:0.84rem;color:var(--text2);padding:0.3rem 0;border-bottom:1px solid var(--border);display:flex;gap:0.6rem;align-items:baseline;}
+.svc-list li::before{content:'→';color:var(--navy);flex-shrink:0;font-size:0.75rem;}
+
+/* REFERENCES */
+.ref-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.ref-intro{color:var(--text2);font-size:0.95rem;line-height:1.85;margin-bottom:2rem;}
+.ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.5px;background:var(--border);}
+.ref-item{background:var(--white);padding:0.9rem 1.2rem;display:flex;align-items:center;gap:0.8rem;transition:background 0.18s;}
+.ref-item:hover{background:var(--bg);}
+.ref-dot{width:6px;height:6px;border-radius:50%;background:var(--navy);flex-shrink:0;}
+.ref-name{font-size:0.85rem;font-weight:500;color:var(--text);line-height:1.3;}
+.ref-sector{font-size:0.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.06em;}
+.sector-legend{display:flex;flex-wrap:wrap;gap:0.8rem;margin-top:1.5rem;}
+.sector-item{display:flex;align-items:center;gap:0.4rem;font-size:0.72rem;color:var(--text3);}
+.sector-dot{width:8px;height:8px;border-radius:50%;}
+
+/* PROFILE */
+.profile-layout{display:grid;grid-template-columns:auto 1fr;gap:4rem;align-items:start;}
+.profile-img{width:260px;flex-shrink:0;}
+.profile-img img{width:100%;height:auto;display:block;box-shadow:0 8px 32px rgba(26,50,84,0.12);}
+.profile-awards{margin-top:2rem;display:flex;flex-direction:column;gap:0;}
+.award-row{display:flex;gap:1rem;padding:0.8rem 0;border-bottom:1px solid var(--border);align-items:flex-start;}
+.award-yr{font-family:var(--fd);font-size:0.95rem;color:var(--navy);min-width:38px;font-weight:600;}
+.award-txt{font-size:0.82rem;color:var(--text2);line-height:1.45;}
+.award-txt strong{color:var(--text);display:block;font-weight:600;}
+.profile-text{color:var(--text2);line-height:1.9;font-size:0.96rem;}
+.profile-text p+p{margin-top:1rem;}
+.profile-text strong{color:var(--text);font-weight:600;}
+.profile-bar{display:flex;gap:2rem;margin-top:1.5rem;padding:1.2rem 1.5rem;background:var(--bg);border-left:3px solid var(--bordeaux);flex-wrap:wrap;}
+.pbar-item{display:flex;flex-direction:column;}
+.pbar-num{font-family:var(--fd);font-size:1.7rem;font-weight:700;color:var(--navy);line-height:1;}
+.pbar-label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);margin-top:0.2rem;}
+
+/* CONTACT */
+.contact-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;}
+.contact-info{display:flex;flex-direction:column;gap:1.8rem;}
+.ci{display:flex;flex-direction:column;gap:0.25rem;}
+.ci-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);}
+.ci-val{font-size:0.94rem;color:var(--text);}
+.ci-val a{color:var(--navy);text-decoration:none;font-weight:500;}
+.ci-val a:hover{text-decoration:underline;}
+.cross-link{margin-top:1rem;padding:1.2rem 1.5rem;background:var(--bg);border:1px solid var(--border);border-left:3px solid var(--gold);}
+.cross-link-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);margin-bottom:0.4rem;}
+.cross-link a{color:var(--navy);font-weight:600;text-decoration:none;font-size:0.9rem;}
+.cross-link a:hover{text-decoration:underline;}
+.cross-link p{font-size:0.8rem;color:var(--text2);margin-top:0.3rem;}
+
+/* FORM */
+.cform{display:flex;flex-direction:column;gap:1.1rem;}
+.cform-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.cform label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--text3);margin-bottom:0.35rem;display:block;}
+.cform input,.cform textarea,.cform select{width:100%;background:var(--white);border:1.5px solid var(--border2);color:var(--text);font-family:var(--fb);font-size:0.9rem;padding:0.78rem 0.95rem;transition:border-color 0.2s;}
+.cform input:focus,.cform textarea:focus,.cform select:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 2px rgba(26,50,84,0.08);}
+.cform textarea{resize:vertical;min-height:110px;}
+.cform button{align-self:flex-start;background:var(--navy);color:var(--white);border:none;padding:0.85rem 2.2rem;font-family:var(--fb);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;cursor:pointer;transition:background 0.22s;margin-top:0.3rem;}
+.cform button:hover{background:var(--navy2);}
+
+/* FOOTER */
+footer{background:var(--navy3);color:rgba(255,255,255,0.6);padding:2rem 4rem;display:flex;align-items:center;justify-content:space-between;font-size:0.76rem;}
+.foot-logo{font-family:var(--fd);color:var(--white);font-size:1rem;font-weight:600;}
+footer a{color:rgba(255,255,255,0.5);text-decoration:none;margin-left:1.4rem;}
+footer a:hover{color:var(--white);}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{animation:fadeUp 0.6s ease both;}
+.hero-content>*:nth-child(1){animation-delay:0.08s}
+.hero-content>*:nth-child(2){animation-delay:0.16s}
+.hero-content>*:nth-child(3){animation-delay:0.24s}
+.hero-content>*:nth-child(4){animation-delay:0.32s}
+.hero-content>*:nth-child(5){animation-delay:0.4s}
+.hero-content>*:nth-child(6){animation-delay:0.48s}
+.hero-img{animation:fadeUp 0.8s 0.2s ease both;}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem;} .nav-center{display:none;} .hamburger{display:flex;}
+  .hero{grid-template-columns:1fr;padding:5.5rem 1.5rem 3rem;gap:3rem;}
+  .hero-img{max-width:320px;margin:0 auto;}
+  section{padding:3.5rem 1.5rem;}
+  .expertise-grid,.services-layout{grid-template-columns:1fr;}
+  .services-layout{border:none;gap:1rem;}
+  .svc{border-right:none;border:1px solid var(--border);}
+  .ref-layout,.profile-layout,.contact-layout{grid-template-columns:1fr;gap:2.5rem;}
+  .profile-img{width:200px;margin:0 auto;}
+  .ref-grid{grid-template-columns:1fr;}
+  .cform-row{grid-template-columns:1fr;}
+  footer{flex-direction:column;gap:0.8rem;text-align:center;}
+  .hero-credentials{gap:1.5rem;flex-wrap:wrap;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <span class="nav-logo-main">BiomatExpert</span>
+    <span class="nav-logo-sub lang-de">Unabhängiger Technischer Experte</span>
+    <span class="nav-logo-sub lang-en">Independent Technical Expert</span>
+    <span class="nav-logo-sub lang-fr">Expert Technique Indépendant</span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="#services" class="lang-de">Leistungen</a><a href="#services" class="lang-en">Services</a><a href="#services" class="lang-fr">Prestations</a></li>
+    <li><a href="#expertise" class="lang-de">Fachgebiete</a><a href="#expertise" class="lang-en">Expertise</a><a href="#expertise" class="lang-fr">Expertise</a></li>
+    <li><a href="#referenzen" class="lang-de">Referenzen</a><a href="#referenzen" class="lang-en">References</a><a href="#referenzen" class="lang-fr">Références</a></li>
+    <li><a href="#profil" class="lang-de">Profil</a><a href="#profil" class="lang-en">Profile</a><a href="#profil" class="lang-fr">Profil</a></li>
+    <li><a href="#kontakt" class="lang-de">Kontakt</a><a href="#kontakt" class="lang-en">Contact</a><a href="#kontakt" class="lang-fr">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('de',this)">DE</button>
+      <button class="lang-btn" onclick="setLang('en',this)">EN</button>
+      <button class="lang-btn" onclick="setLang('fr',this)">FR</button>
+    </div>
+    <div class="hamburger" onclick="openMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="nav-mobile" id="mobileMenu">
+  <button class="nav-close" onclick="closeMenu()">✕</button>
+  <a href="#services" onclick="closeMenu()"><span class="lang-de">Leistungen</span><span class="lang-en">Services</span><span class="lang-fr">Prestations</span></a>
+  <a href="#expertise" onclick="closeMenu()"><span class="lang-de">Fachgebiete</span><span class="lang-en">Expertise</span><span class="lang-fr">Expertise</span></a>
+  <a href="#referenzen" onclick="closeMenu()"><span class="lang-de">Referenzen</span><span class="lang-en">References</span><span class="lang-fr">Références</span></a>
+  <a href="#profil" onclick="closeMenu()"><span class="lang-de">Profil</span><span class="lang-en">Profile</span><span class="lang-fr">Profil</span></a>
+  <a href="#kontakt" onclick="closeMenu()"><span class="lang-de">Kontakt</span><span class="lang-en">Contact</span><span class="lang-fr">Contact</span></a>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('de',this)">DE</button>
+    <button class="lang-btn" onclick="setLang('en',this)">EN</button>
+    <button class="lang-btn" onclick="setLang('fr',this)">FR</button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="lang-de">Unabhängiger Technischer Experte · Kiel</span>
+      <span class="lang-en">Independent Technical Expert · Kiel</span>
+      <span class="lang-fr">Expert Technique Indépendant · Kiel</span>
+    </div>
+    <h1>
+      <span class="lang-de">Prof. Dr.<br>Mohammed <em>Es-Souni</em></span>
+      <span class="lang-en">Prof. Dr.<br>Mohammed <em>Es-Souni</em></span>
+      <span class="lang-fr">Prof. Dr.<br>Mohammed <em>Es-Souni</em></span>
+    </h1>
+    <div class="hero-rule"></div>
+    <p class="hero-desc">
+      <span class="lang-de">Wissenschaftliche Expertise an der Schnittstelle zwischen Materialwissenschaften, Biomaterialien und Nanotechnologie — für fundierte Gutachten, technische Due Diligence und IP-Bewertung.</span>
+      <span class="lang-en">Scientific expertise at the intersection of materials science, biomaterials, and nanotechnology — for substantiated expert opinions, technical due diligence, and IP assessment.</span>
+      <span class="lang-fr">Expertise scientifique à l'intersection des sciences des matériaux, des biomatériaux et des nanotechnologies — pour des expertises fondées, la due diligence technique et l'évaluation de brevets.</span>
+    </p>
+    <div class="hero-credentials">
+      <div><span class="cred-num">160+</span><span class="cred-label lang-de">Publikationen</span><span class="cred-label lang-en">Publications</span><span class="cred-label lang-fr">Publications</span></div>
+      <div><span class="cred-num">15</span><span class="cred-label lang-de">Patente</span><span class="cred-label lang-en">Patents</span><span class="cred-label lang-fr">Brevets</span></div>
+      <div><span class="cred-num">35+</span><span class="cred-label lang-de">Jahre Expertise</span><span class="cred-label lang-en">Years of expertise</span><span class="cred-label lang-fr">Ans d'expertise</span></div>
+      <div><span class="cred-num">5×</span><span class="cred-label lang-de">Transferpreise</span><span class="cred-label lang-en">Transfer awards</span><span class="cred-label lang-fr">Prix de transfert</span></div>
+    </div>
+    <div>
+      <a href="#kontakt" class="btn btn-primary lang-de">Gutachten anfragen →</a>
+      <a href="#kontakt" class="btn btn-primary lang-en">Request consultation →</a>
+      <a href="#kontakt" class="btn btn-primary lang-fr">Demander une expertise →</a>
+      <a href="#expertise" class="btn btn-secondary lang-de">Fachgebiete</a>
+      <a href="#expertise" class="btn btn-secondary lang-en">Expertise areas</a>
+      <a href="#expertise" class="btn btn-secondary lang-fr">Domaines d'expertise</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="photo2.jpg" alt="Prof. Dr. Mohammed Es-Souni">
+    <div class="hero-img-caption lang-de">Prof. Dr. Mohammed Es-Souni · Kiel</div>
+    <div class="hero-img-caption lang-en">Prof. Dr. Mohammed Es-Souni · Kiel</div>
+    <div class="hero-img-caption lang-fr">Prof. Dr. Mohammed Es-Souni · Kiel</div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="section-alt">
+  <div class="sec-label gold">
+    <span class="lang-de">Wissenschaftlicher Hintergrund</span>
+    <span class="lang-en">Scientific Background</span>
+    <span class="lang-fr">Contexte Scientifique</span>
+  </div>
+  <h2>
+    <span class="lang-de">Fachlicher Hintergrund als <em>Grundlage des Consultings</em></span>
+    <span class="lang-en">Scientific Background as the <em>Foundation for Consulting</em></span>
+    <span class="lang-fr">Contexte Scientifique comme <em>Base du Conseil</em></span>
+  </h2>
+  <div class="sec-rule"></div>
+  <p class="sec-intro lang-de">Die folgenden Wissensgebiete bilden die fachliche Grundlage für unabhängige Gutachten, IP-Bewertungen und technische Due Diligence — sie spiegeln jahrzehntelange Forschungs- und Publikationstätigkeit wider, nicht aktuelle Entwicklungsangebote.</p>
+  <p class="sec-intro lang-en">The following knowledge areas form the scientific foundation for independent expert opinions, IP assessments, and technical due diligence — they reflect decades of research and publication activity, not current development services.</p>
+  <p class="sec-intro lang-fr">Les domaines de connaissance suivants constituent la base scientifique pour les expertises indépendantes, les évaluations de PI et la due diligence technique — ils reflètent des décennies d'activité de recherche et de publication, et non des services de développement actuels.</p>
+  <div class="expertise-grid">
+
+    <div class="exp-card">
+      <div class="exp-icon">⬡</div>
+      <h3><span class="lang-de">Biomaterialien & Implantate</span><span class="lang-en">Biomaterials & Implants</span><span class="lang-fr">Biomatériaux & Implants</span></h3>
+      <p class="exp-desc lang-de">Tiefgreifende Kenntnisse in Implantatwerkstoffen (NiTi, Ti-Legierungen, Polymere), Biokompatibilitätsbeurteilung, antibakteriellen Oberflächen und biomaterial-biologischen Wechselwirkungen — Grundlage für Gutachten zu Medizinprodukten und Implantatversagen.</p>
+      <p class="exp-desc lang-en">In-depth knowledge of implant materials (NiTi, Ti alloys, polymers), biocompatibility assessment, antibacterial surfaces, and biomaterial-biological interactions — the basis for expert opinions on medical devices and implant failure.</p>
+      <p class="exp-desc lang-fr">Connaissance approfondie des matériaux d'implants (NiTi, alliages Ti, polymères), évaluation de la biocompatibilité, surfaces antibactériennes et interactions biomatériau-biologique — base pour les expertises sur les dispositifs médicaux et les défaillances d'implants.</p>
+      <div class="exp-tags"><span class="exp-tag">NiTi SMA</span><span class="exp-tag">Biokompatibilität</span><span class="exp-tag">Antibakteriell</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-icon">◈</div>
+      <h3><span class="lang-de">Nanomaterialien & Diagnostik</span><span class="lang-en">Nanomaterials & Diagnostics</span><span class="lang-fr">Nanomatériaux & Diagnostic</span></h3>
+      <p class="exp-desc lang-de">Umfassende Kenntnis von Nanopartikeln, Nanokompositen und nanostrukturierten Schichten für diagnostische Anwendungen und Biosensoren — Basis für die wissenschaftliche Bewertung von Patenten und Technologien im Bereich Nanodiagnostik.</p>
+      <p class="exp-desc lang-en">Comprehensive knowledge of nanoparticles, nanocomposites, and nanostructured films for diagnostic applications and biosensors — basis for the scientific assessment of patents and technologies in nanodiagnostics.</p>
+      <p class="exp-desc lang-fr">Connaissance approfondie des nanoparticules, nanocomposites et films nanostructurés pour les applications diagnostiques et les biocapteurs — base pour l'évaluation scientifique des brevets et technologies en nanodiagnostic.</p>
+      <div class="exp-tags"><span class="exp-tag">Nanopartikel</span><span class="exp-tag">Biosensoren</span><span class="exp-tag">SERS</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-icon">◎</div>
+      <h3><span class="lang-de">Drug Delivery Systeme</span><span class="lang-en">Drug Delivery Systems</span><span class="lang-fr">Systèmes Drug Delivery</span></h3>
+      <p class="exp-desc lang-de">Fundiertes Wissen über Wirkstoffträgersysteme, Hydrogele und Freisetzungsmechanismen — ermöglicht die sachkundige Beurteilung von Patenten, klinischen Ansprüchen und technologischen Innovationen im Bereich Drug Delivery.</p>
+      <p class="exp-desc lang-en">Sound knowledge of drug carrier systems, hydrogels, and release mechanisms — enabling informed assessment of patents, clinical claims, and technological innovations in the drug delivery field.</p>
+      <p class="exp-desc lang-fr">Connaissance solide des systèmes vecteurs de médicaments, hydrogels et mécanismes de libération — permettant l'évaluation éclairée des brevets, revendications cliniques et innovations technologiques dans le domaine du drug delivery.</p>
+      <div class="exp-tags"><span class="exp-tag">Hydrogele</span><span class="exp-tag">Polymere</span><span class="exp-tag">Wirkstofffreisetzung</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-icon">⊕</div>
+      <h3><span class="lang-de">Funktionelle Polymere</span><span class="lang-en">Functional Polymers</span><span class="lang-fr">Polymères Fonctionnels</span></h3>
+      <p class="exp-desc lang-de">Tiefe Expertise in Antifouling-Polymersystemen, zwitterionischen Beschichtungen und Nanokompositen — fundierte Basis für die Bewertung entsprechender Patente, Technologietransfers und Schadensfälle in der Medizin- und Optikbranche.</p>
+      <p class="exp-desc lang-en">Deep expertise in antifouling polymer systems, zwitterionic coatings, and nanocomposites — a solid basis for assessing related patents, technology transfers, and damage cases in the medical and optical sectors.</p>
+      <p class="exp-desc lang-fr">Expertise approfondie en systèmes polymères anti-adhésifs, revêtements zwitterioniques et nanocomposites — base solide pour l'évaluation des brevets, transferts de technologie et sinistres dans les secteurs médical et optique.</p>
+      <div class="exp-tags"><span class="exp-tag">Antifouling</span><span class="exp-tag">pSBMA</span><span class="exp-tag">Photopfropfung</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-icon">✦</div>
+      <h3><span class="lang-de">Bioinspirierte Werkstoffe</span><span class="lang-en">Bioinspired Materials</span><span class="lang-fr">Matériaux Bioinspiré</span></h3>
+      <p class="exp-desc lang-de">Wissenschaftliches Verständnis bioinspirierter Prinzipien in der Materialforschung — Grundlage für die kritische Beurteilung von Patentansprüchen, Innovationshöhe und technologischer Neuartigkeit in diesem wachsenden Feld.</p>
+      <p class="exp-desc lang-en">Scientific understanding of bioinspired principles in materials research — basis for the critical assessment of patent claims, inventive step, and technological novelty in this growing field.</p>
+      <p class="exp-desc lang-fr">Compréhension scientifique des principes bioinspiré en recherche matériaux — base pour l'évaluation critique des revendications de brevets, de l'activité inventive et de la nouveauté technologique dans ce domaine en croissance.</p>
+      <div class="exp-tags"><span class="exp-tag">Biomimetik</span><span class="exp-tag">Selbstheilend</span><span class="exp-tag">Hydrogel</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-icon">⬢</div>
+      <h3><span class="lang-de">Oberflächentechnik & Beschichtungen</span><span class="lang-en">Surface Technology & Coatings</span><span class="lang-fr">Technologie de Surface & Revêtements</span></h3>
+      <p class="exp-desc lang-de">Breites analytisches Instrumentarium: AFM, REM/TEM, XPS, Nanomechanik, Tribologie — ermöglicht unabhängige, messtechnisch fundierte Schadensgutachten und technische Stellungnahmen zu Beschichtungs- und Oberflächentechnologien.</p>
+      <p class="exp-desc lang-en">Wide analytical toolkit: AFM, SEM/TEM, XPS, nanomechanics, tribology — enabling independent, measurement-based damage assessments and technical opinions on coating and surface technologies.</p>
+      <p class="exp-desc lang-fr">Large boîte à outils analytique : AFM, MEB/MET, XPS, nanomécaniques, tribologie — permettant des expertises en dommages indépendantes et fondées sur des mesures, ainsi que des avis techniques sur les technologies de revêtement et de surface.</p>
+      <div class="exp-tags"><span class="exp-tag">AFM/XPS/REM</span><span class="exp-tag">Sol-Gel</span><span class="exp-tag">Tribologie</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sec-label gold">
+    <span class="lang-de">Leistungen</span>
+    <span class="lang-en">Services</span>
+    <span class="lang-fr">Prestations</span>
+  </div>
+  <h2>
+    <span class="lang-de">Consulting für Unternehmen &<br><em>Patentanwaltskanzleien</em></span>
+    <span class="lang-en">Consulting for Companies &<br><em>Patent Law Firms</em></span>
+    <span class="lang-fr">Conseil pour Entreprises &<br><em>Cabinets de Propriété Intellectuelle</em></span>
+  </h2>
+  <div class="sec-rule"></div>
+  <div class="services-layout">
+
+    <div class="svc">
+      <div class="svc-num">01</div>
+      <h3><span class="lang-de">Technische Due Diligence & Schadensgutachten</span><span class="lang-en">Technical Due Diligence & Damage Assessment</span><span class="lang-fr">Due Diligence Technique & Expertise en Dommages</span></h3>
+      <p class="svc-desc lang-de">Unabhängige technische Bewertung von Materialien, Beschichtungen und Fertigungsprozessen. Ursachenanalyse bei Versagen, Schadensermittlung und wissenschaftlich fundierte Dokumentation für Unternehmen, Gerichte und Versicherungen.</p>
+      <p class="svc-desc lang-en">Independent technical assessment of materials, coatings, and manufacturing processes. Root cause analysis of failures, damage investigation, and scientifically substantiated documentation for companies, courts, and insurers.</p>
+      <p class="svc-desc lang-fr">Évaluation technique indépendante des matériaux, revêtements et procédés de fabrication. Analyse des causes de défaillance, investigation des dommages et documentation scientifiquement fondée pour entreprises, tribunaux et assureurs.</p>
+      <ul class="svc-list">
+        <li><span class="lang-de">Beschichtungsversagen & Korrosion</span><span class="lang-en">Coating failure & corrosion</span><span class="lang-fr">Défaillance de revêtement & corrosion</span></li>
+        <li><span class="lang-de">Medizinprodukte & Implantate</span><span class="lang-en">Medical devices & implants</span><span class="lang-fr">Dispositifs médicaux & implants</span></li>
+        <li><span class="lang-de">Materialermüdung & Bruchanalyse</span><span class="lang-en">Material fatigue & fracture analysis</span><span class="lang-fr">Fatigue des matériaux & analyse de rupture</span></li>
+        <li><span class="lang-de">Nano- & Polymermaterialien</span><span class="lang-en">Nano- & polymer materials</span><span class="lang-fr">Nano- & polymères</span></li>
+      </ul>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">02</div>
+      <h3><span class="lang-de">IP-Bewertung & Patentberatung</span><span class="lang-en">IP Assessment & Patent Consulting</span><span class="lang-fr">Évaluation PI & Conseil en Brevets</span></h3>
+      <p class="svc-desc lang-de">Wissenschaftliche Bewertung von Patenten und Schutzrechten im Bereich Materialwissenschaften, Biomaterialien und Nanotechnologie. Technische Stellungnahmen für Patentanwaltskanzleien, Due Diligence bei Unternehmenstransaktionen und Lizenzstreitigkeiten.</p>
+      <p class="svc-desc lang-en">Scientific assessment of patents and intellectual property rights in materials science, biomaterials, and nanotechnology. Technical opinions for patent law firms, due diligence in corporate transactions, and licensing disputes.</p>
+      <p class="svc-desc lang-fr">Évaluation scientifique des brevets et droits de propriété intellectuelle en sciences des matériaux, biomatériaux et nanotechnologie. Avis techniques pour cabinets de propriété intellectuelle, due diligence lors de transactions et litiges de licence.</p>
+      <ul class="svc-list">
+        <li><span class="lang-de">Patentrecherche & Freiheitsanalyse (FTO)</span><span class="lang-en">Patent search & freedom-to-operate (FTO)</span><span class="lang-fr">Recherche de brevets & liberté d'exploitation (FTO)</span></li>
+        <li><span class="lang-de">Technische Stellungnahmen</span><span class="lang-en">Technical opinions</span><span class="lang-fr">Avis techniques</span></li>
+        <li><span class="lang-de">Bewertung von Innovationshöhe</span><span class="lang-en">Assessment of inventive step</span><span class="lang-fr">Évaluation de l'activité inventive</span></li>
+        <li><span class="lang-de">Lizenzstreitigkeiten</span><span class="lang-en">Licensing disputes</span><span class="lang-fr">Litiges de licence</span></li>
+      </ul>
+    </div>
+
+    <div class="svc">
+      <div class="svc-num">03</div>
+      <h3><span class="lang-de">Wissenschaftliches Consulting</span><span class="lang-en">Scientific Consulting</span><span class="lang-fr">Conseil Scientifique</span></h3>
+      <p class="svc-desc lang-de">Strategische Beratung für Unternehmen in Forschungs- und Entwicklungsprojekten. Technologiebewertung, Machbarkeitsstudien und wissenschaftliche Begleitung von Innovationsprozessen im Bereich funktioneller Materialien.</p>
+      <p class="svc-desc lang-en">Strategic advisory for companies in research and development projects. Technology assessment, feasibility studies, and scientific guidance of innovation processes in functional materials.</p>
+      <p class="svc-desc lang-fr">Conseil stratégique pour les entreprises dans les projets de recherche et développement. Évaluation technologique, études de faisabilité et accompagnement scientifique des processus d'innovation en matériaux fonctionnels.</p>
+      <ul class="svc-list">
+        <li><span class="lang-de">F&E-Beratung & Machbarkeitsstudien</span><span class="lang-en">R&D advisory & feasibility studies</span><span class="lang-fr">Conseil R&D & études de faisabilité</span></li>
+        <li><span class="lang-de">Technologiebewertung</span><span class="lang-en">Technology assessment</span><span class="lang-fr">Évaluation technologique</span></li>
+        <li><span class="lang-de">Drug Delivery & Biomaterialien</span><span class="lang-en">Drug delivery & biomaterials</span><span class="lang-fr">Drug delivery & biomatériaux</span></li>
+        <li><span class="lang-de">Honorar nach Vereinbarung</span><span class="lang-en">Fees by agreement</span><span class="lang-fr">Honoraires par accord</span></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section id="referenzen" class="section-alt">
+  <div class="sec-label gold">
+    <span class="lang-de">Referenzen</span>
+    <span class="lang-en">References</span>
+    <span class="lang-fr">Références</span>
+  </div>
+  <h2>
+    <span class="lang-de">Industrielle <em>Kooperationen</em></span>
+    <span class="lang-en">Industrial <em>Collaborations</em></span>
+    <span class="lang-fr">Collaborations <em>Industrielles</em></span>
+  </h2>
+  <div class="sec-rule"></div>
+  <div class="ref-layout">
+    <div>
+      <p class="ref-intro lang-de">Über 35 Jahre habe ich Entwicklungs- und Beratungsprojekte für Unternehmen aus Medizintechnik, Marine, Verteidigung, Automobil und Industrie durchgeführt — von der Konzeptphase bis zur anwendungsreifen Lösung.</p>
+      <p class="ref-intro lang-en">Over 35 years I have conducted R&D and consulting projects for companies across medical technology, marine, defence, automotive, and industry — from concept to application-ready solution.</p>
+      <p class="ref-intro lang-fr">Pendant plus de 35 ans, j'ai mené des projets de R&D et de conseil pour des entreprises dans les secteurs médical, maritime, défense, automobile et industriel — du concept à la solution prête à l'emploi.</p>
+      <div class="ref-grid">
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Waldemar Link</div><div class="ref-sector lang-de">Medizintechnik</div><div class="ref-sector lang-en">Medical Technology</div><div class="ref-sector lang-fr">Technologie Médicale</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">GLW Medical</div><div class="ref-sector lang-de">Medizintechnik</div><div class="ref-sector lang-en">Medical Technology</div><div class="ref-sector lang-fr">Technologie Médicale</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">pfm medical</div><div class="ref-sector lang-de">Medizintechnik</div><div class="ref-sector lang-en">Medical Technology</div><div class="ref-sector lang-fr">Technologie Médicale</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">JFR Medical</div><div class="ref-sector lang-de">Medizintechnik · Kiel</div><div class="ref-sector lang-en">Medical Technology · Kiel</div><div class="ref-sector lang-fr">Technologie Médicale · Kiel</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Thyssenkrupp Marine Systems</div><div class="ref-sector lang-de">Marine & Verteidigung</div><div class="ref-sector lang-en">Marine & Defence</div><div class="ref-sector lang-fr">Marine & Défense</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Raytheon-Anschütz</div><div class="ref-sector lang-de">Marine · Kiel</div><div class="ref-sector lang-en">Marine · Kiel</div><div class="ref-sector lang-fr">Marine · Kiel</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Toyota Material Handling</div><div class="ref-sector lang-de">Automotive · Schweden</div><div class="ref-sector lang-en">Automotive · Sweden</div><div class="ref-sector lang-fr">Automobile · Suède</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">J.P. Sauer & Sohn</div><div class="ref-sector lang-de">Maschinenbau · Kiel</div><div class="ref-sector lang-en">Engineering · Kiel</div><div class="ref-sector lang-fr">Ingénierie · Kiel</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">HCP Innovation</div><div class="ref-sector lang-de">Innovation · Dänemark</div><div class="ref-sector lang-en">Innovation · Denmark</div><div class="ref-sector lang-fr">Innovation · Danemark</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Diamond Tools</div><div class="ref-sector lang-de">Werkzeuge & Oberflächen</div><div class="ref-sector lang-en">Tools & Surfaces</div><div class="ref-sector lang-fr">Outils & Surfaces</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Adexo LTD</div><div class="ref-sector lang-de">Industrie</div><div class="ref-sector lang-en">Industry</div><div class="ref-sector lang-fr">Industrie</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Franzius Yacht Consulting</div><div class="ref-sector lang-de">Marine</div><div class="ref-sector lang-en">Marine</div><div class="ref-sector lang-fr">Marine</div></div></div>
+        <div class="ref-item"><div class="ref-dot"></div><div><div class="ref-name">Walterwerk</div><div class="ref-sector lang-de">Industrie · Kiel</div><div class="ref-sector lang-en">Industry · Kiel</div><div class="ref-sector lang-fr">Industrie · Kiel</div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-label gold" style="margin-bottom:1rem;">
+        <span class="lang-de">Wissenschaftliche Bilanz</span>
+        <span class="lang-en">Scientific Track Record</span>
+        <span class="lang-fr">Bilan Scientifique</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1px;background:var(--border);">
+        <div style="background:var(--white);padding:1.5rem 1.8rem;border-left:4px solid var(--navy);">
+          <div style="font-family:var(--fd);font-size:2.5rem;font-weight:700;color:var(--navy);line-height:1;">160+</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-de">Peer-reviewed Publikationen</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-en">Peer-reviewed publications</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-fr">Publications évaluées par les pairs</div>
+        </div>
+        <div style="background:var(--white);padding:1.5rem 1.8rem;border-left:4px solid var(--bordeaux);">
+          <div style="font-family:var(--fd);font-size:2.5rem;font-weight:700;color:var(--bordeaux);line-height:1;">15</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-de">Erteilte Patente (DE, EU, US)</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-en">Granted patents (DE, EU, US)</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-fr">Brevets accordés (DE, UE, US)</div>
+        </div>
+        <div style="background:var(--white);padding:1.5rem 1.8rem;border-left:4px solid var(--gold);">
+          <div style="font-family:var(--fd);font-size:2.5rem;font-weight:700;color:var(--gold);line-height:1;">€15M+</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-de">Eingeworbene Forschungsmittel</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-en">Acquired research funding</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-fr">Financements de recherche acquis</div>
+        </div>
+        <div style="background:var(--white);padding:1.5rem 1.8rem;border-left:4px solid var(--navy2);">
+          <div style="font-family:var(--fd);font-size:2.5rem;font-weight:700;color:var(--navy2);line-height:1;">5×</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-de">Technologietransfer-Preise</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-en">Technology transfer awards</div>
+          <div style="font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text3);margin-top:0.3rem;" class="lang-fr">Prix de transfert de technologie</div>
+        </div>
+      </div>
+      <div style="margin-top:1.2rem;">
+        <a href="https://scholar.google.com/citations?user=OJ-1LlMAAAAJ" target="_blank" class="btn btn-secondary lang-de" style="font-size:0.72rem;">Publikationsliste → Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=OJ-1LlMAAAAJ" target="_blank" class="btn btn-secondary lang-en" style="font-size:0.72rem;">Publication list → Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=OJ-1LlMAAAAJ" target="_blank" class="btn btn-secondary lang-fr" style="font-size:0.72rem;">Liste de publications → Google Scholar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFIL -->
+<section id="profil">
+  <div class="sec-label gold">
+    <span class="lang-de">Profil</span>
+    <span class="lang-en">Profile</span>
+    <span class="lang-fr">Profil</span>
+  </div>
+  <h2>
+    <span class="lang-de">Wissenschaftlicher <em>Werdegang</em></span>
+    <span class="lang-en">Scientific <em>Background</em></span>
+    <span class="lang-fr">Parcours <em>Scientifique</em></span>
+  </h2>
+  <div class="sec-rule"></div>
+  <div class="profile-layout">
+    <div>
+      <div class="profile-img">
+        <img src="photo2.jpg" alt="Prof. Dr. Mohammed Es-Souni">
+      </div>
+      <div class="profile-awards">
+        <div class="award-row"><span class="award-yr">2019</span><div class="award-txt"><strong><span class="lang-de">Innovationspreis Stadt Kiel</span><span class="lang-en">Innovation Award City of Kiel</span><span class="lang-fr">Prix d'Innovation Ville de Kiel</span></strong><span class="lang-de">Herausragender Beitrag zur angewandten Forschung</span><span class="lang-en">Outstanding contribution to applied research</span><span class="lang-fr">Contribution exceptionnelle à la recherche appliquée</span></div></div>
+        <div class="award-row"><span class="award-yr">2012</span><div class="award-txt"><strong><span class="lang-de">Technologietransferpreis (1. Preis)</span><span class="lang-en">Technology Transfer Award (1st Prize)</span><span class="lang-fr">Prix de Transfert de Technologie (1er Prix)</span></strong><span class="lang-de">Innovationsstiftung Schleswig-Holstein</span><span class="lang-en">Innovation Foundation Schleswig-Holstein</span><span class="lang-fr">Fondation pour l'Innovation Schleswig-Holstein</span></div></div>
+        <div class="award-row"><span class="award-yr">2010</span><div class="award-txt"><strong><span class="lang-de">Transferpreis</span><span class="lang-en">Transfer Award</span><span class="lang-fr">Prix de Transfert</span></strong><span class="lang-de">Ausgezeichneter Forschungs- & Technologietransfer</span><span class="lang-en">Outstanding research & technology transfer</span><span class="lang-fr">Recherche & transfert de technologie remarquables</span></div></div>
+        <div class="award-row"><span class="award-yr">2002</span><div class="award-txt"><strong><span class="lang-de">Technologiepreis Land Schleswig-Holstein</span><span class="lang-en">Technology Award Land Schleswig-Holstein</span><span class="lang-fr">Prix de Technologie Land Schleswig-Holstein</span></strong></div></div>
+        <div class="award-row"><span class="award-yr">1992</span><div class="award-txt"><strong>Best Paper Award</strong><span class="lang-de"> — Internationale Metallografische Gesellschaft</span><span class="lang-en"> — International Metallographic Society</span><span class="lang-fr"> — Société Internationale de Métallographie</span></div></div>
+      </div>
+    </div>
+    <div class="profile-text">
+      <p class="lang-de">Prof. Dr. Mohammed Es-Souni ist Gründer und ehemaliger Lehrstuhlinhaber des Instituts für Werkstoff- und Oberflächentechnologie (IMST) an der <strong>Hochschule für Angewandte Wissenschaften Kiel</strong> und Ehrenmitglied der Hochschule. Mit über 35 Jahren Forschungs- und Industrieerfahrung verfügt er über ausgewiesene Expertise im Querschnitt zwischen Materialwissenschaften, Biomaterialien, Nanomaterialien und funktionellen Polymeren.</p>
+      <p class="lang-de">Er hat Entwicklungs- und Beratungsprojekte für namhafte Unternehmen aus den Bereichen Medizintechnik, Marine, Verteidigung, Automotive und Industrie durchgeführt. Seine wissenschaftliche Leistung umfasst über <strong>160 peer-reviewed Publikationen</strong> und <strong>15 erteilte Patente</strong> (DE, EU, US). Für seine Arbeit an der Schnittstelle zwischen Grundlagenforschung und industrieller Anwendung wurde er mit <strong>fünf Technologietransfer-Preisen</strong> ausgezeichnet.</p>
+      <p class="lang-de">Als unabhängiger technischer Experte bietet er Consulting-Leistungen für Unternehmen und Patentanwaltskanzleien an — von der technischen Due Diligence und IP-Bewertung bis hin zu Schadensgutachten und wissenschaftlicher Beratung in komplexen Material- und Technologiefragen.</p>
+
+      <p class="lang-en">Prof. Dr. Mohammed Es-Souni is the founder and former chair of the Institute for Materials & Surface Technology (IMST) at the <strong>Hochschule für Angewandte Wissenschaften Kiel</strong>, where he holds Honorary Member status. With over 35 years of research and industrial experience, he brings deep expertise spanning materials science, biomaterials, nanomaterials, and functional polymers.</p>
+      <p class="lang-en">He has conducted R&D and consulting projects for leading companies across medical technology, marine, defence, automotive, and industrial sectors. His scientific output comprises <strong>160+ peer-reviewed publications</strong> and <strong>15 granted patents</strong> (DE, EU, US). His work at the interface of fundamental research and industrial application has been recognised with <strong>five technology transfer awards</strong>.</p>
+      <p class="lang-en">As an independent technical expert, he provides consulting services to companies and patent law firms — covering technical due diligence, IP assessment, damage evaluation, and scientific advisory in complex materials and technology matters.</p>
+
+      <p class="lang-fr">Le Prof. Dr. Mohammed Es-Souni est fondateur et ancien titulaire de la chaire de l'Institut für Werkstoff- und Oberflächentechnologie (IMST) à la <strong>Hochschule für Angewandte Wissenschaften Kiel</strong>, dont il est membre honoraire. Fort de plus de 35 ans d'expérience en recherche et en industrie, il dispose d'une expertise reconnue à l'intersection des sciences des matériaux, des biomatériaux, des nanomatériaux et des polymères fonctionnels.</p>
+      <p class="lang-fr">Il a mené des projets de R&D et de conseil pour des entreprises de premier plan dans les secteurs médical, maritime, défense, automobile et industriel. Ses travaux scientifiques comprennent plus de <strong>160 publications évaluées par des pairs</strong> et <strong>15 brevets accordés</strong> (DE, UE, US). Son travail à l'interface entre la recherche fondamentale et l'application industrielle a été récompensé par <strong>cinq prix de transfert de technologie</strong>.</p>
+      <p class="lang-fr">En tant qu'expert technique indépendant, il propose des services de conseil aux entreprises et aux cabinets de propriété intellectuelle — couvrant la due diligence technique, l'évaluation de brevets, les expertises en dommages et le conseil scientifique.</p>
+
+      <div class="profile-bar">
+        <div class="pbar-item"><span class="pbar-num">1980</span><span class="pbar-label lang-de">MSc, Besançon</span><span class="pbar-label lang-en">MSc, Besançon</span><span class="pbar-label lang-fr">MSc, Besançon</span></div>
+        <div class="pbar-item"><span class="pbar-num">1986</span><span class="pbar-label lang-de">Habilitation, Strasbourg</span><span class="pbar-label lang-en">Habilitation, Strasbourg</span><span class="pbar-label lang-fr">Habilitation, Strasbourg</span></div>
+        <div class="pbar-item"><span class="pbar-num">1987</span><span class="pbar-label lang-de">GKSS Geesthacht</span><span class="pbar-label lang-en">GKSS Geesthacht</span><span class="pbar-label lang-fr">GKSS Geesthacht</span></div>
+        <div class="pbar-item"><span class="pbar-num">1993</span><span class="pbar-label lang-de">Prof. & Gründer IMST</span><span class="pbar-label lang-en">Prof. & Founder IMST</span><span class="pbar-label lang-fr">Prof. & Fondateur IMST</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="kontakt" class="section-alt">
+  <div class="sec-label gold">
+    <span class="lang-de">Kontakt</span>
+    <span class="lang-en">Contact</span>
+    <span class="lang-fr">Contact</span>
+  </div>
+  <h2>
+    <span class="lang-de">Gutachten <em>anfragen</em></span>
+    <span class="lang-en">Request an <em>expert opinion</em></span>
+    <span class="lang-fr">Demander une <em>expertise</em></span>
+  </h2>
+  <div class="sec-rule"></div>
+  <div class="contact-layout">
+    <div class="contact-info">
+      <div class="ci">
+        <span class="ci-label lang-de">Name & Titel</span>
+        <span class="ci-label lang-en">Name & Title</span>
+        <span class="ci-label lang-fr">Nom & Titre</span>
+        <span class="ci-val">Prof. Dr. Mohammed Es-Souni</span>
+      </div>
+      <div class="ci">
+        <span class="ci-label lang-de">Institution</span>
+        <span class="ci-label lang-en">Institution</span>
+        <span class="ci-label lang-fr">Institution</span>
+        <span class="ci-val lang-de">IMST — Institute for Materials & Surface Technology<br>Kiel, Deutschland</span>
+        <span class="ci-val lang-en">IMST — Institute for Materials & Surface Technology<br>Kiel, Germany</span>
+        <span class="ci-val lang-fr">IMST — Institute for Materials & Surface Technology<br>Kiel, Allemagne</span>
+      </div>
+      <div class="ci">
+        <span class="ci-label">Email</span>
+        <span class="ci-val"><a href="mailto:contact@biomatexpert.de">contact@biomatexpert.de</a></span>
+      </div>
+      <div class="ci">
+        <span class="ci-label lang-de">Honorar</span>
+        <span class="ci-label lang-en">Fees</span>
+        <span class="ci-label lang-fr">Honoraires</span>
+        <span class="ci-val lang-de" style="color:var(--text2);font-size:0.88rem;">Nach individueller Vereinbarung — abhängig von Umfang, Komplexität und Dringlichkeit des Auftrags.</span>
+        <span class="ci-val lang-en" style="color:var(--text2);font-size:0.88rem;">By individual agreement — depending on scope, complexity, and urgency of the assignment.</span>
+        <span class="ci-val lang-fr" style="color:var(--text2);font-size:0.88rem;">Par accord individuel — en fonction de l'étendue, de la complexité et de l'urgence de la mission.</span>
+      </div>
+      <div class="cross-link">
+        <div class="cross-link-label lang-de">Coating-Technologien & IP-Lizenzierung</div>
+        <div class="cross-link-label lang-en">Coating Technologies & IP Licensing</div>
+        <div class="cross-link-label lang-fr">Technologies de Revêtement & Licences IP</div>
+        <a href="https://cleancoat-imst.de" target="_blank">cleancoat-imst.de →</a>
+        <p class="lang-de">Antibiofouling-Beschichtungen, kratzfeste Oberflächen und Elektrokatalyse für grünen Wasserstoff.</p>
+        <p class="lang-en">Antibiofouling coatings, scratch-resistant surfaces, and electrocatalysis for green hydrogen.</p>
+        <p class="lang-fr">Revêtements anti-bioencrassement, surfaces résistantes aux rayures et électrocatalyse pour l'hydrogène vert.</p>
+      </div>
+    </div>
+    <div>
+      <form class="cform" action="https://formsubmit.co/contact@biomatexpert.de" method="POST">
+        <input type="hidden" name="_subject" value="Anfrage via BiomatExpert.de">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+        <div class="cform-row">
+          <div>
+            <label class="lang-de">Name</label>
+            <label class="lang-en">Name</label>
+            <label class="lang-fr">Nom</label>
+            <input type="text" name="name" required>
+          </div>
+          <div>
+            <label class="lang-de">Organisation</label>
+            <label class="lang-en">Organisation</label>
+            <label class="lang-fr">Organisation</label>
+            <input type="text" name="organisation">
+          </div>
+        </div>
+        <div>
+          <label class="lang-de">E-Mail</label>
+          <label class="lang-en">Email</label>
+          <label class="lang-fr">E-mail</label>
+          <input type="email" name="email" required>
+        </div>
+        <div>
+          <label class="lang-de">Art der Anfrage</label>
+          <label class="lang-en">Type of enquiry</label>
+          <label class="lang-fr">Type de demande</label>
+          <select name="type">
+            <option class="lang-de" value="Due Diligence">Technische Due Diligence</option>
+            <option class="lang-en" value="Due Diligence">Technical Due Diligence</option>
+            <option class="lang-fr" value="Due Diligence">Due Diligence Technique</option>
+            <option value="IP">IP-Bewertung / IP Assessment / Évaluation IP</option>
+            <option value="Schadensgutachten">Schadensgutachten / Damage Assessment / Expertise Dommages</option>
+            <option value="Consulting">Wissenschaftliches Consulting / Scientific Consulting / Conseil Scientifique</option>
+            <option value="Sonstiges">Sonstiges / Other / Autre</option>
+          </select>
+        </div>
+        <div>
+          <label class="lang-de">Ihre Nachricht</label>
+          <label class="lang-en">Your message</label>
+          <label class="lang-fr">Votre message</label>
+          <textarea name="message" required></textarea>
+        </div>
+        <button type="submit">
+          <span class="lang-de">Anfrage senden →</span>
+          <span class="lang-en">Send enquiry →</span>
+          <span class="lang-fr">Envoyer la demande →</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="foot-logo">BiomatExpert · Es-Souni</span>
+  <span class="lang-de">© 2026 Prof. Dr. Mohammed Es-Souni · Kiel, Deutschland</span>
+  <span class="lang-en">© 2026 Prof. Dr. Mohammed Es-Souni · Kiel, Germany</span>
+  <span class="lang-fr">© 2026 Prof. Dr. Mohammed Es-Souni · Kiel, Allemagne</span>
+  <span>
+    <a href="#kontakt" class="lang-de">Impressum</a>
+    <a href="#kontakt" class="lang-en">Impressum</a>
+    <a href="#kontakt" class="lang-fr">Mentions légales</a>
+    <a href="https://cleancoat-imst.de" target="_blank">cleancoat-imst.de</a>
+  </span>
+</footer>
+
+<script>
+// Language switcher
+function setLang(lang, btn) {
+  document.body.className = lang === 'de' ? '' : lang;
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b => { if(b.textContent.toLowerCase() === lang) b.classList.add('active'); });
+}
+
+// Show correct language elements
+document.addEventListener('DOMContentLoaded', function() {
+  // Default: DE — lang-de elements visible, others hidden
+  document.querySelectorAll('.lang-en,.lang-fr').forEach(el => el.style.display = 'none');
+});
+
+// Override setLang to handle display
+function setLang(lang, btn) {
+  document.querySelectorAll('.lang-de,.lang-en,.lang-fr').forEach(el => {
+    const isBlock = ['DIV','P','SPAN','LI','UL','A','OPTION'].includes(el.tagName);
+    el.style.display = 'none';
+  });
+  document.querySelectorAll('.lang-' + lang).forEach(el => {
+    el.style.display = '';
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    if(b.textContent.toLowerCase() === lang) b.classList.add('active');
+  });
+  document.documentElement.lang = lang;
+}
+
+// Mobile menu
+function openMenu(){ document.getElementById('mobileMenu').classList.add('open'); }
+function closeMenu(){ document.getElementById('mobileMenu').classList.remove('open'); }
+</script>
+</body>
+</html>
