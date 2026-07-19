@@ -114,9 +114,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-close{position:absolute;top:1.5rem;right:2rem;font-size:1.5rem;color:var(--text3);cursor:pointer;background:none;border:none;}
 
 /* ── HERO ── */
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:6rem 4rem 3rem;background:var(--white);position:relative;}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:6rem 4rem 3rem;gap:5rem;background:var(--white);position:relative;}
 .hero::after{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,transparent,var(--navy) 20%,var(--navy) 80%,transparent);}
-.hero-content{max-width:680px;}
 .hero-eyebrow{font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.7rem;}
 .hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--gold);}
 h1{font-family:var(--fd);font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:700;line-height:1.12;margin-bottom:0.5rem;color:var(--navy3);}
@@ -237,6 +236,7 @@ footer a:hover{color:var(--white);}
 @media(max-width:900px){
   nav{padding:1rem 1.5rem;} .nav-center{display:none;} .hamburger{display:flex;}
   .hero{grid-template-columns:1fr;padding:5.5rem 1.5rem 3rem;gap:3rem;}
+  .hero>div:last-child{display:none;}
 
   section{padding:3.5rem 1.5rem;}
   .expertise-grid{grid-template-columns:1fr;}
@@ -336,32 +336,7 @@ footer a:hover{color:var(--white);}
     <p class="hero-desc lang-de">Wissenschaftliche Expertise an der Schnittstelle zwischen Materialwissenschaften, Biomaterialien und Nanotechnologie — für fundierte Gutachten, technische Due Diligence und IP-Bewertung.</p>
     <p class="hero-desc lang-en">Scientific expertise at the intersection of materials science, biomaterials, and nanotechnology — for substantiated expert opinions, technical due diligence, and IP assessment.</p>
     <p class="hero-desc lang-fr">Expertise scientifique à l'intersection des sciences des matériaux, des biomatériaux et des nanotechnologies — pour des expertises fondées, la due diligence technique et l'évaluation de brevets.</p>
-    <div class="hero-credentials">
-      <div>
-        <span class="cred-num">160+</span>
-        <span class="cred-label lang-de">Publikationen</span>
-        <span class="cred-label lang-en">Publications</span>
-        <span class="cred-label lang-fr">Publications</span>
-      </div>
-      <div>
-        <span class="cred-num">15</span>
-        <span class="cred-label lang-de">Patente</span>
-        <span class="cred-label lang-en">Patents</span>
-        <span class="cred-label lang-fr">Brevets</span>
-      </div>
-      <div>
-        <span class="cred-num">35+</span>
-        <span class="cred-label lang-de">Jahre Expertise</span>
-        <span class="cred-label lang-en">Years expertise</span>
-        <span class="cred-label lang-fr">Ans d'expertise</span>
-      </div>
-      <div>
-        <span class="cred-num">5×</span>
-        <span class="cred-label lang-de">Transferpreise</span>
-        <span class="cred-label lang-en">Transfer awards</span>
-        <span class="cred-label lang-fr">Prix transfert</span>
-      </div>
-    </div>
+
     <div style="display:flex;flex-wrap:wrap;gap:0.8rem;align-items:center;">
       <a href="#kontakt" class="btn btn-primary lang-de">Gutachten anfragen →</a>
       <a href="#kontakt" class="btn btn-primary lang-en">Request consultation →</a>
@@ -369,6 +344,29 @@ footer a:hover{color:var(--white);}
       <a href="#expertise" class="btn btn-secondary lang-de" style="margin-left:0;">Fachgebiete</a>
       <a href="#expertise" class="btn btn-secondary lang-en" style="margin-left:0;">Expertise areas</a>
       <a href="#expertise" class="btn btn-secondary lang-fr" style="margin-left:0;">Domaines</a>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:1px;background:var(--border);">
+    <div style="background:var(--bg);padding:1.8rem 2rem;border-left:4px solid var(--bordeaux);">
+      <div style="font-size:0.63rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--bordeaux);margin-bottom:0.7rem;"><span class="lang-de">Leistung 01</span><span class="lang-en">Service 01</span><span class="lang-fr">Prestation 01</span></div>
+      <div style="font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--navy3);margin-bottom:0.4rem;"><span class="lang-de">Technische Due Diligence & Schadensgutachten</span><span class="lang-en">Technical Due Diligence & Damage Assessment</span><span class="lang-fr">Due Diligence Technique & Expertise en Dommages</span></div>
+      <div style="font-size:0.8rem;color:var(--text2);"><span class="lang-de">Beschichtungsversagen · Medizinprodukte · Materialermüdung</span><span class="lang-en">Coating failure · Medical devices · Material fatigue</span><span class="lang-fr">Défaillance · Dispositifs médicaux · Fatigue des matériaux</span></div>
+    </div>
+    <div style="background:var(--bg);padding:1.8rem 2rem;border-left:4px solid var(--navy);">
+      <div style="font-size:0.63rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--navy);margin-bottom:0.7rem;"><span class="lang-de">Leistung 02</span><span class="lang-en">Service 02</span><span class="lang-fr">Prestation 02</span></div>
+      <div style="font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--navy3);margin-bottom:0.4rem;"><span class="lang-de">IP-Bewertung & Patentberatung</span><span class="lang-en">IP Assessment & Patent Consulting</span><span class="lang-fr">Évaluation PI & Conseil en Brevets</span></div>
+      <div style="font-size:0.8rem;color:var(--text2);"><span class="lang-de">Patentrecherche · FTO-Analyse · Lizenzstreitigkeiten</span><span class="lang-en">Patent search · FTO analysis · Licensing disputes</span><span class="lang-fr">Recherche brevets · Analyse FTO · Litiges de licence</span></div>
+    </div>
+    <div style="background:var(--bg);padding:1.8rem 2rem;border-left:4px solid var(--gold);">
+      <div style="font-size:0.63rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.7rem;"><span class="lang-de">Leistung 03</span><span class="lang-en">Service 03</span><span class="lang-fr">Prestation 03</span></div>
+      <div style="font-family:var(--fd);font-size:1rem;font-weight:600;color:var(--navy3);margin-bottom:0.4rem;"><span class="lang-de">Wissenschaftliches Consulting</span><span class="lang-en">Scientific Consulting</span><span class="lang-fr">Conseil Scientifique</span></div>
+      <div style="font-size:0.8rem;color:var(--text2);"><span class="lang-de">F&amp;E-Beratung · Technologiebewertung · Biomaterialien</span><span class="lang-en">R&amp;D advisory · Technology assessment · Biomaterials</span><span class="lang-fr">Conseil R&amp;D · Évaluation technologique · Biomatériaux</span></div>
+    </div>
+    <div style="background:var(--white);padding:1.4rem 2rem;display:flex;gap:2rem;border-top:1px solid var(--border);">
+      <div><span style="font-family:var(--fd);font-size:1.9rem;font-weight:700;color:var(--navy);display:block;line-height:1;">160+</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-de">Publikationen</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-en">Publications</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-fr">Publications</span></div>
+      <div><span style="font-family:var(--fd);font-size:1.9rem;font-weight:700;color:var(--bordeaux);display:block;line-height:1;">15</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-de">Patente</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-en">Patents</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-fr">Brevets</span></div>
+      <div><span style="font-family:var(--fd);font-size:1.9rem;font-weight:700;color:var(--gold);display:block;line-height:1;">35+</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-de">Jahre</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-en">Years</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-fr">Ans</span></div>
+      <div><span style="font-family:var(--fd);font-size:1.9rem;font-weight:700;color:var(--navy2);display:block;line-height:1;">5×</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-de">Preise</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-en">Awards</span><span style="font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text3);" class="lang-fr">Prix</span></div>
     </div>
   </div>
 
