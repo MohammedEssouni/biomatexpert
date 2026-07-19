@@ -42,14 +42,7 @@
 html{scroll-behavior:smooth;}
 body{background:var(--white);color:var(--text);font-family:var(--fb);font-size:16px;line-height:1.7;overflow-x:hidden;}
 
-/* ── LANGUAGE ── */
-.lang-en,.lang-fr{display:none !important;}
-body.lang-en .lang-de{display:none !important;}
-body.lang-en .lang-fr{display:none !important;}
-body.lang-en .lang-en{display:revert !important;}
-body.lang-fr .lang-de{display:none !important;}
-body.lang-fr .lang-en{display:none !important;}
-body.lang-fr .lang-fr{display:revert !important;}
+/* ── LANGUAGE handled by JS ── */
 
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);box-shadow:0 1px 12px rgba(26,50,84,0.07);}
@@ -331,7 +324,7 @@ footer a:hover{color:var(--white);}
     </div>
   </div>
   <div class="hero-img">
-    <img src="fpr-es-souni-2856.jpg" alt="Prof. Dr. Mohammed Es-Souni">
+    <img src="photo2.jpg" alt="Prof. Dr. Mohammed Es-Souni">
     <div class="hero-img-caption">Prof. Dr. Mohammed Es-Souni · Kiel</div>
   </div>
 </section>
@@ -563,7 +556,7 @@ footer a:hover{color:var(--white);}
   <div class="profile-layout">
     <div>
       <div class="profile-img">
-        <img src="fpr-es-souni-2856.jpg" alt="Prof. Dr. Mohammed Es-Souni">
+        <img src="photo2.jpg" alt="Prof. Dr. Mohammed Es-Souni">
       </div>
       <div class="awards-list">
         <div class="award-row"><span class="award-yr">2019</span><div class="award-txt"><strong><span class="lang-de">Innovationspreis Stadt Kiel</span><span class="lang-en">Innovation Award City of Kiel</span><span class="lang-fr">Prix d'Innovation Ville de Kiel</span></strong></div></div>
@@ -712,12 +705,29 @@ footer a:hover{color:var(--white);}
 
 <script>
 function setLang(lang) {
-  document.body.className = lang !== 'de' ? 'lang-' + lang : '';
-  document.documentElement.lang = lang;
+  // Hide all language elements
+  document.querySelectorAll('.lang-de,.lang-en,.lang-fr').forEach(function(el) {
+    el.style.display = 'none';
+  });
+  // Show elements for selected language with correct display type
+  document.querySelectorAll('.lang-' + lang).forEach(function(el) {
+    var tag = el.tagName.toLowerCase();
+    if (['p','div','h1','h2','h3','h4','ul','ol','form'].indexOf(tag) !== -1) {
+      el.style.display = 'block';
+    } else if (tag === 'li') {
+      el.style.display = 'list-item';
+    } else {
+      el.style.display = 'inline';
+    }
+  });
+  // Update active button
   document.querySelectorAll('.lang-btn').forEach(function(b) {
     b.classList.toggle('active', b.textContent.trim().toLowerCase() === lang);
   });
+  document.documentElement.lang = lang;
 }
+// Initialize German on load
+document.addEventListener('DOMContentLoaded', function() { setLang('de'); });
 function openMenu() { document.getElementById('mobileMenu').classList.add('open'); }
 function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
 </script>
